@@ -74,7 +74,7 @@
 		</p>
 		</div>
 		<div align="right"><input type="button" id="button" value="Submit"/></div><br>
-		<div id="pdfcontain" style="width: 100%; height: 750; margin: auto; background-color: #424242;"><iframe src="downloadpres.pdf" style="width: 100%; height: 750;"></iframe></div>
+		<!-- <div id="pdfcontain" style="width: 100%; height: 750; margin: auto; background-color: #424242;"><iframe src="downloadpres.pdf" style="width: 100%; height: 750;"></iframe></div> -->
 
 	<script>
 
@@ -267,8 +267,8 @@
 		doc.setFontSize(6.5)
 		doc.text(61, 123.2, time);
 
-		var viewer = $('#pdfcontain')
-		PDFObject.embed(doc.output('datauristring'), viewer);
+		// var viewer = $('#pdfcontain')
+		PDFObject.embed(doc.output('datauristring') /*, viewer*/);
 	});
 </script>
 </div>
